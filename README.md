@@ -1,4 +1,4 @@
-# Web Archive APIs workshop #
+# Web Archive APIs workshop
 
 ## Scripts and such for workshops on web archive APIs ##
 
@@ -22,15 +22,18 @@ The Availability API is useful to looking up if something has been archived. If 
 
 and store it in a text file like "wayback_lookup.txt" and run this command
 
-curl -X POST -d @wayback_lookup.txt http://archive.org/wayback/available --header  "Wayback-Api-Version:2" --header "Content-Type:application/json"
+```curl -X POST -d @wayback_lookup.txt http://archive.org/wayback/available --header  "Wayback-Api-Version:2" --header "Content-Type:application/json"```
 
 and get a response in JSON.
+
+### Get a list of all hosts on a certain domain ###
+domain=np; curl "http://wwwb-dedup.us.archive.org:8083/cdx/search?url=$domain&matchType=domain&fl=urlkey,length&from=1996&to=2015" | cut -f1 -d '/' | uniq -c
 
 Here is a sample python notebook for playing with these APIs and charting results: https://gist.github.com/JaimieMurdock/3e9235128024afa680a7e6fdd0b0b746 
 
 ## Host Details API ##
 
-The new Wayback Machine search includes profile information for specific hosts, for example, https://web.archive.org/details/example.com and this visualization is served via an API, https://web-beta.archive.org/__wb/search/metadata?q=host:example.com which can be queried at multiple levels, including TLD, for instance, https://web.archive.org/__wb/search/metadata?q=tld:pizza and these stats can be parsed and analyzed.
+The new Wayback Machine search includes profile information for specific hosts, for example, https://web.archive.org/details/example.com and this visualization is served via an API, https://web-beta.archive.org/__wb/search/metadata?q=host:example.com which can be queried at multiple levels, including TLD, for instance, https://web.archive.org/__wb/search/metadata?q=tld:pizza (and https://web.archive.org/details/pizza) and these stats can be parsed and analyzed.
 
 ### Sum the total new captures by mime for a host ###
 
