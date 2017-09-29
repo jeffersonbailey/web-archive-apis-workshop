@@ -50,7 +50,7 @@ The new Wayback Search also allows the ability to search for specific media type
 
 ### Lookup a specific checksum in the Wayback Machine ###
 
-`http://wbgrp-search0-a.us.archive.org:8090/search/waybacksearch?q=digest:sha1:XH6Z6FZHL7T4OIJL3FQX43MFTEWDQ6PX`
+http://wbgrp-search0-a.us.archive.org:8090/search/waybacksearch?q=digest:sha1:XH6Z6FZHL7T4OIJL3FQX43MFTEWDQ6PX
 
 ### Feed in a list of checksums and get their associated URLs ###
 
@@ -70,7 +70,7 @@ and the parameters for using this API via Open Search are at https://webarchive.
 
 ### View full text search results in JSON via the API ###
 
-`http://wbgrp-svc060.us.archive.org:8091/ait/opensearch?&q=ukraine&i=4399&fmt=json`
+http://wbgrp-svc060.us.archive.org:8091/ait/opensearch?&q=ukraine&i=4399&fmt=json
 
 ## Archive-It Partner Data API ##
 This API provides access to collection-specific data within Archive-It (but a similar API could provide such collection-related information held in other systems).
