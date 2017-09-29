@@ -22,7 +22,7 @@ The Availability API is useful to looking up if something has been archived. If 
 
 and store it in a text file like "wayback_lookup.txt" and run this command
 
-```curl -X POST -d @wayback_lookup.txt http://archive.org/wayback/available --header  "Wayback-Api-Version:2" --header "Content-Type:application/json"```
+`curl -X POST -d @wayback_lookup.txt http://archive.org/wayback/available --header  "Wayback-Api-Version:2" --header "Content-Type:application/json"`
 
 and get a response in JSON.
 
