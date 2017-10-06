@@ -64,9 +64,7 @@ Make a text file of SHA1 checksums with one checksum on each line; in this examp
 
 ## Full Text Search APIs ##
 
-Archive-It does full-text indexing of  its entire corpus (well over 1PB total).
-
-and the parameters for using this API via Open Search are at https://webarchive.jira.com/wiki/spaces/ARIH/pages/13468101/OpenSearch+Overview
+Archive-It does full-text indexing of its entire corpus (well over 1PB total).The parameters for using this API via Open Search are at https://support.archive-it.org/hc/en-us/articles/208002246-How-to-access-your-web-archives-with-OpenSearch
 
 ### View full text search results in JSON via the API ###
 
